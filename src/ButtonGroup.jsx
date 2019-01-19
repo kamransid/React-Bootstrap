@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonGroup, Button, ButtonToolbar } from 'react-bootstrap'
+import { ButtonGroup, Button, ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap'
 
 class ButtonGroupExample extends React.Component {
     constructor(props, context) {
@@ -51,6 +51,18 @@ class ButtonGroupExample extends React.Component {
                     <Button bsStyle='danger' >Don</Button>
                 </ButtonGroup>
             </ButtonToolbar>
+            <ButtonGroup style={style}>
+                <Button bsStyle='primary'>
+                    Primary
+                </Button>
+                <Button bsStyle='warning'>
+                    Warning
+                </Button>
+                <DropdownButton bsStyle='info' title='Dropdown' id = 'kuchbhi'>
+                    <MenuItem eventKey="1">Dropdown Link</MenuItem>
+                    <MenuItem eventKey='2'>Dropdown Menu</MenuItem>
+                </DropdownButton>
+            </ButtonGroup>
             </React.Fragment>
 
         )
