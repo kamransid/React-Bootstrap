@@ -8,14 +8,20 @@ class ButtonGroupExample extends React.Component{
             show:true
         }
     }
+    handle(){
+        console.log(this)
+    }
     render(){
         const style={
-            marginTop: '10px'
+            marginTop: '10px',
+            marginLeft: '5px',
+            backgroundColour: 'red',
+            border: 'solid red'
         }
         return(
 
            <ButtonGroup style={style}>
-               <Button  bsStyle='primary'>Left</Button>
+               <Button  bsStyle='primary' onClick={this.handle.bind(this)}>Left</Button>
                <Button  bsStyle='warning'>Middle</Button>
                <Button  bsStyle='success'>Right</Button>
            </ButtonGroup>
