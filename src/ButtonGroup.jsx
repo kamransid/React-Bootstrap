@@ -1,32 +1,63 @@
 import React from 'react'
-import { ButtonGroup, Button} from 'react-bootstrap'
+import { ButtonGroup, Button, ButtonToolbar } from 'react-bootstrap'
 
-class ButtonGroupExample extends React.Component{
-    constructor(props, context){
+class ButtonGroupExample extends React.Component {
+    constructor(props, context) {
         super(props, context)
-        this.state={
-            show:true
+        console.dir(props)
+        console.log(`Hi this is ${props}`)
+        this.state = {
+            show: true
         }
+        this.handle = this.handle.bind(this)
     }
-    handle(){
+    handle() {
+        console.log(this.props)
         console.log(this)
     }
-    render(){
-        const style={
+    render() {
+        const style = {
             marginTop: '10px',
             marginLeft: '5px',
-            backgroundColour: 'red',
-            border: 'solid red'
-        }
-        return(
 
-           <ButtonGroup style={style}>
-               <Button  bsStyle='primary' onClick={this.handle.bind(this)}>Left</Button>
-               <Button  bsStyle='warning'>Middle</Button>
-               <Button  bsStyle='success'>Right</Button>
-           </ButtonGroup>
+        }
+        return (
+            <React.Fragment>
+
+            <ButtonGroup style={style}>
+
+                <Button bsStyle='primary' onClick={this.handle}>Left</Button>
+                <Button bsStyle='warning'>Middle</Button>
+                <Button bsStyle='success'>Right</Button>
+            </ButtonGroup>
+
+            <ButtonToolbar style={style}>
+                <ButtonGroup>
+                    <Button bsStyle='primary' bsSize='large'>I</Button>
+                    <Button bsStyle='warning' bsSize='large'>am</Button>
+                    <Button bsStyle='success' bsSize='large'>super</Button>
+                    <Button bsStyle='danger' bsSize='large'>Don</Button>
+                </ButtonGroup>
+                <ButtonGroup>
+                    <Button bsStyle='primary' bsSize='large'>I</Button>
+                    <Button bsStyle='warning' bsSize='large'>am</Button>
+                    <Button bsStyle='success' bsSize='large'>super</Button>
+                    <Button bsStyle='danger' bsSize='large'>Don</Button>
+                </ButtonGroup>
+                <ButtonGroup bsSize='large' bsStyle='primary'>
+                    <Button bsStyle='primary' >I</Button>
+                    <Button bsStyle='warning' >am</Button>
+                    <Button bsStyle='success' >super</Button>
+                    <Button bsStyle='danger' >Don</Button>
+                </ButtonGroup>
+            </ButtonToolbar>
+            </React.Fragment>
+
         )
     }
+}
+ButtonGroupExample.defaultPrpos = {
+    kumar: 'Bhaiiya'
 }
 
 export default ButtonGroupExample
