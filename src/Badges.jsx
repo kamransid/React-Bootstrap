@@ -5,7 +5,7 @@ class BadgeExample extends React.Component{
     render(){
         return(
             <p>
-                Badges <Badge>42</Badge>
+                Badges <Badge pullRight="true"><a href="https://react-bootstrap.github.io/components/badge/">Click Me</a></Badge>
             </p>
         )
     }
