@@ -21,9 +21,11 @@ class DropDown extends React.Component{
                id = {`dropdown basic ${i}`}
             >
             <MenuItem eventKey='1'>Action</MenuItem>
-            <MenuItem eventKey='1'>Action</MenuItem>
-            <MenuItem eventKey='1'>Action</MenuItem>
-            <MenuItem eventKey='1'>Action</MenuItem>
+            <MenuItem eventKey='2'>Another Action</MenuItem>
+            <MenuItem eventKey='3'>Active Item</MenuItem>
+            <MenuItem eventKey='4'>Action123</MenuItem>
+            <MenuItem divider></MenuItem>
+            <MenuItem eventKey='5'>Seperated Link</MenuItem>
 
             </DropdownButton>
         )
