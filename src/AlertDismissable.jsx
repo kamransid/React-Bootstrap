@@ -16,9 +16,12 @@ class AlertDismissable extends React.Component {
     handleDismiss() {
       this.setState({ show: false });
     }
-  
+    /**
+     * U have to have use setState otherwise it will not effected
+     * 
+     */
     handleShow() {
-      this.setState({ show: true });
+      this.state.show = true
     }
   
     render() {
