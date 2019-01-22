@@ -10,7 +10,6 @@ function handle(item,i){
     }
     return(
     <SplitButton
-      style = {style}
       bsStyle = {item.toLowerCase()}
       title = {item}
       key = {i}
@@ -21,6 +20,10 @@ function handle(item,i){
     >
     Action
     </MenuItem>
+    <MenuItem eventKey='2'>Another Action</MenuItem>
+    <MenuItem eventKey='3'>Something else here</MenuItem>
+    <MenuItem divider/>
+    <MenuItem eventKey='4'>Seperated Link</MenuItem>
 
     </SplitButton>
     )
