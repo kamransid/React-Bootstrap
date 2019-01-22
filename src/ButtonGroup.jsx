@@ -19,7 +19,6 @@ class ButtonGroupExample extends React.Component {
         const style = {
             marginTop: '10px',
             marginLeft: '5px',
-
         }
         return (
             <React.Fragment>
@@ -32,7 +31,7 @@ class ButtonGroupExample extends React.Component {
             </ButtonGroup>
 
             <ButtonToolbar style={style}>
-                <ButtonGroup>
+                <ButtonGroup >
                     <Button bsStyle='primary' bsSize='large'>I</Button>
                     <Button bsStyle='warning' bsSize='large'>am</Button>
                     <Button bsStyle='success' bsSize='large'>super</Button>
@@ -62,6 +61,14 @@ class ButtonGroupExample extends React.Component {
                     <MenuItem eventKey="1">Dropdown Link</MenuItem>
                     <MenuItem eventKey='2'>Dropdown Menu</MenuItem>
                 </DropdownButton>
+            </ButtonGroup>
+            <ButtonGroup style={style} vertical>
+                <Button bsStyle='warning'>
+                    Warning
+                </Button>
+                <Button bsStyle='info'>
+                    Info
+                </Button>    
             </ButtonGroup>
             </React.Fragment>
 
