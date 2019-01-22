@@ -21,7 +21,9 @@ class AlertDismissable extends React.Component {
      * 
      */
     handleShow() {
-      this.state.show = true
+      this.setState({
+        show: true
+      })
     }
   
     render() {
