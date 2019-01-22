@@ -9,7 +9,8 @@ import './index.css';
 // import App from './ButtonGroup'
 // import App from './Carousels'
 // import App from './DropDown'
-import App from './SplitButtonDropDown'
+// import App from './SplitButtonDropDown'
+import App from './DropDown'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

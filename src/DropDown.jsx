@@ -16,6 +16,7 @@ class DropDown extends React.Component{
         return (
             <DropdownButton
                bsStyle={item.toLowerCase()}
+               noCaret = {false}
                title = {item}
                key = {i}
                id = {`dropdown basic ${i}`}
